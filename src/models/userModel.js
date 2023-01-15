@@ -2,9 +2,9 @@
 const mongoose =require('mongoose')
 
 const UserSchema= new mongoose.Schema({
-    name:String,
-    Email:String,
-    password:String,
+    name:{type:String,required:true},
+    Email:{type:String,required:true},
+    password:{type:String,required:true},
     type:{
         type:String,
         default:"Student",
